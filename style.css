@@ -92,6 +92,10 @@ body{
     margin-left: 20px;
 }
 
+.change-a:active{
+    color: var(--desaturated-blue);
+}
+
 .final{
     display: flex;
     flex-direction: column;
@@ -110,6 +114,10 @@ body{
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 15px 15px 0 var(--pale-blue);
+}
+
+.final-proced:active{
+    background-color: var(--desaturated-blue);
 }
 
 .final-order{
