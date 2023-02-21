@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 0 20px;
+    margin: auto;
+}
+
+.imagen-container-img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.principio{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.principio-titulo{
+    color: var(--dark-blue);
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.principio-parrafo {
+    color: var(--desaturated-blue);
+    padding: 0 40px;
+}
+
+.container-mid{
+    width: 90%;
+    height: 70px;
+    background-color: rgb(238, 241, 252);
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 0 10px;
+}
+
+.container-icon{
+    padding: 0 10px;
+}
+
+.mid-cont{
+    margin-right: 10px;
+}
+
+.mid-title{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.mid-parrafo{
+    color: var(--desaturated-blue);
+}
+
+.change-a{
+    color:var(--bright-blue);
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.final-proced{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 15px 15px 0 var(--pale-blue);
+}
+
+.final-order{
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.attribution{
+    padding-top: 15px;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--dark-blue);
+}
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:700px){
+    .container{
+        width: 400px;
+    }
+}
